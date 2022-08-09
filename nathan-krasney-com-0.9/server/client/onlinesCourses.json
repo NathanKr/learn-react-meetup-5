@@ -1,0 +1,23 @@
+[
+  
+  {
+    "courseName": "Learn React In a Better Way",
+    "imgSrc": "/images/learn-react.png",
+    "href": "https://www.udemy.com/course/learn-react-in-a-better-way/?referralCode=4299350292063C517597"
+  },
+  {
+    "courseName": "Learn React Hooks in a Better Way",
+    "imgSrc": "/images/react-hooks-img.png",
+    "href": "https://www.udemy.com/course/learn-react-hooks-in-a-better-way/?referralCode=B2E5AC5DE2762AB8A667"
+  },
+  {
+    "courseName": "Deploy your NodeExpress App to the Cloud",
+    "imgSrc": "/images/deploy-app-img.png",
+    "href": "https://www.udemy.com/course/deploy-your-node-express-app-to-the-cloud/?referralCode=69772F332A34A0921636"
+  },
+  {
+    "courseName": "טייפסקריפט בגישת 10%-90% עם מימוש אפליקציה למפתחי ג'אווה סקריפט",
+    "imgSrc": "/images/ts-logo.png",
+    "href": "https://nathankrasney.podia.com/c1d067c7-ebfc-4e02-b960-4641ba3aac1b?coupon=UOW7NQB"
+  }
+]

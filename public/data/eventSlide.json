@@ -1,0 +1,32 @@
+[
+  {
+    "startDt": "Weekly Sun 8:00   PM to 9:00 PM IDT",
+    "title": "Office hours",
+    "url": {
+      "href": "https://us02web.zoom.us/j/85098204776?pwd=V2VYazhLMmlmQkxYL2drN0VBaFNVdz09",
+      "text": "Zoom meeting url"
+    },
+    "desc": "Ask me anything. Everyone is invited",
+    "location": "Zoom"
+  },
+  {
+    "startDt": "Wed 10/Aug/2022. 7:00 PM to 8:30 PM IDT",
+    "title": "migrate react application to next.js application",
+    "url": {
+      "href": "https://www.meetup.com/learn-react-israel/events/287488063/",
+      "text": "Register here"
+    },
+    "desc": "This meeting is part of 'Learn React' meetup",
+    "location": "Zoom"
+  },
+  {
+    "startDt": "Weekly on Sun,Tue, Thur . 7:00 PM - 8:00 PM IDT",
+    "title": "Free 1x1 meeting with Nathan Krasney for junior react developers",
+    "desc": "I will explain about my mentoring program for junior react developers looking for their first job and will code review your final react based project",
+    "url": {
+      "href": "https://savvycal.com/nathankrasney/14601a74",
+      "text": "Schedule here"
+    },
+    "location": "Zoom"
+  }
+]
