@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import IEvent from "../Interfaces/IEvent";
+import IEvent from "src/Interfaces/IEvent";
 import styles from "styles/EventsSlide.module.css";
 
 const EventsSlide = () => {

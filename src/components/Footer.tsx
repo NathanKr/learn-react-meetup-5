@@ -1,4 +1,4 @@
-import "./Footer.css";
+import styles from "styles/Footer.module.css";
 
 const udemy = "/icons/udemy-icon.png";
 const github = "/icons/github.png";
@@ -8,11 +8,11 @@ const meetup = "/icons/meetup.png";
 
 const Footer = () => {
   return (
-    <footer className="Footer">
-      <div className="Footer-rights">
+    <footer className={styles.Footer}>
+      <div className={styles.Footer_rights}>
         © 2020-2022 NATHAN KRASNEY. ALL RIGHTS RESERVED.
       </div>
-      <div className="Footer-icons">
+      <div className={styles.Footer_icons}>
         <a href="https://github.com/NathanKr">
           <img src={github} alt="site-icon" className="fa-icon" />
         </a>

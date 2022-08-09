@@ -1,6 +1,6 @@
-import "./Event.css";
+import styles from "styles/Event.module.css";
 import { FC } from "react";
-import IEvent from "../Interfaces/IEvent";
+import IEvent from "src/Interfaces/IEvent";
 
 const eventPagePic = "/images/eventPage-pic.jpg";
 
@@ -9,18 +9,20 @@ const Event: FC<IEvent> = ({ startDt, title, desc, location, url }) => {
   const urlElem = url ? <a href={url.href}>{url.text}</a> : null;
 
   return (
-    <div className="Event">
-      <div className="Event-img-container">
-        <img src={eventPagePic} alt="event" className="Event-img" />
-        <div className="Event-img-inner-container">
-          <h5 className="Event-date">{dateTime}</h5>
+    <div className={styles.Event}>
+      <div className={styles.Event_img_container}>
+        <img src={eventPagePic} alt="event" className={styles.Event_img} />
+        <div className={styles.Event_img_inner_container}>
+          <h5 className={styles.Event_date}>{dateTime}</h5>
         </div>
       </div>
 
-      <div className="Event-desc-container">
-        <h4 className="Event-name">{title}</h4>
-        {urlElem}
-        <p className="Event-desc">{desc}</p>
+      <div className={styles.Event_desc_container}>
+        {/* Event-name does not exist */}
+        <h4>{title}</h4>
+        {/* {urlElem}
+        Event-desc does not exist */}
+        <p>{desc}</p>
         <small>Location : {location}</small>
       </div>
     </div>

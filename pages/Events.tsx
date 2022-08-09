@@ -1,8 +1,8 @@
-import Event from "./Event";
-import { Helmet } from "react-helmet";
-import "./Events.css";
-import useFetch from "../hooks/useFetch";
-import IEvent, { IUrl } from "../Interfaces/IEvent";
+import Event from "src/components/Event";
+import Head from 'next/head';
+import styles from "styles/Events.module.css";
+import useFetch from "src/hooks/useFetch";
+import IEvent, { IUrl } from "src/Interfaces/IEvent";
 
 const Events = () => {
   const events: IEvent[] = useFetch("/data/eventSlide.json") ?? [];
@@ -23,16 +23,16 @@ const Events = () => {
   });
 
   return (
-    <div className="Events">
-      <Helmet>
+    <div className={styles.Events}>
+      <Head>
         <title>Nathan Krasney | React Courses & Mentoring</title>
         <meta
           name="description"
           content="Web developer , register to these react events. Number of sits is limited. Contact me for more info"
         />
-      </Helmet>
-      <h1 className="Events-title">Upcoming Events</h1>
-      <div className="Events-container">{elements}</div>
+      </Head>
+      <h1 className={styles.Events_title}>Upcoming Events</h1>
+      <div className={styles.Events_container}>{elements}</div>
     </div>
   );
 };

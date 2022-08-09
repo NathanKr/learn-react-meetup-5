@@ -1,5 +1,5 @@
 import { FC } from "react";
-import "./ClickedTestimonial.css"
+// its empty import styles from "styles/ClickedTestimonial.module.css"
 
 interface IProps{
   img_src:string;
@@ -10,7 +10,7 @@ interface IProps{
 
 const ClickedTestimonial : FC<IProps> = ({ img_src, desc, href ,testimonial_category}) => {
   return (
-    <div className="ClickedTestimonial">
+    <div>
       <p>{testimonial_category}</p>
       <a href={href}>
         <img src={img_src} className="img-fluid img-thumbnail" alt="testImg"/>
