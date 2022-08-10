@@ -1,6 +1,11 @@
 <h2>Motivation</h2>
 Prepare for meetup 5
 
+<h2>Status</h2>
+<h3>Done</h3>
+pages
+<h3>missing</h3>
+navbar , footer , google analytics , savycall , Image and ssg for all relevant pages (started with Courses)
 
 
 <h2>Ignoring in first path</h2>

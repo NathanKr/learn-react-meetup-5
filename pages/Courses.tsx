@@ -1,16 +1,73 @@
 import stylesCourses from "styles/Courses.module.css";
 import stylesCoursesData from "styles/CoursesData.module.css";
 import ICourse from "src/Interfaces/ICourse";
-import useFetch from "src/hooks/useFetch";
 import Head from "next/head";
 import Image from "next/image";
+import { FC } from "react";
 
-const Courses = () => {
-  const onlineCoursesArray: ICourse[] =
-    useFetch("/data/onlinesCourses.json") ?? [];
+interface IProps {
+  courses: ICourse[];
+}
 
-  // Course-online-1 does not exist
-  const onlineCourses = onlineCoursesArray.map((course, index) => (
+export async function getStaticProps() {
+  //local
+  let props: IProps = {
+    courses: [],
+  };
+
+  // const host =
+  //   process.env.NODE_ENV == "development"
+  //     ? "http://localhost:3000"
+  //     : "https://learn-react-meetup-5-pre.vercel.app";
+      
+  // const res = await fetch(`${host}/api/courses`);
+  // props.courses = await res.json();
+  props.courses = [
+    {
+      "courseName": "next.js הבסיס של",
+      "imgSrc": "/images/white-nextjs.png",
+      "href": "https://nathankrasney.podia.com/next-js"
+    },
+    {
+      "courseName": "טייפסקריפט בגישת 10%-90% עם מימוש אפליקציה",
+      "imgSrc": "/images/ts-logo.png",
+      "href": "https://nathankrasney.podia.com/c1d067c7-ebfc-4e02-b960-4641ba3aac1b?coupon=UOW7NQB"
+    },
+    {
+      "courseName": "בנית אפליקצית ריאקט בעזרת טייפסקריפט",
+      "imgSrc": "/images/react-and-ts.png",
+      "href": "https://nathankrasney.podia.com/33db1adf-6609-4bd3-a33a-92fb2d9fa43e"
+    },
+    {
+      "courseName": "מבצע מטורף - שני קורסים במחיר הזול מבינהם",
+      "imgSrc": "/images/sale.png",
+      "href": "https://nathankrasney.podia.com/b1c1e50a-2324-4714-9e7c-0ef04581a128"
+    },
+    {
+      "courseName": "Learn React In a Better Way",
+      "imgSrc": "/images/learn-react.png",
+      "href": "https://www.udemy.com/course/learn-react-in-a-better-way/?referralCode=4299350292063C517597"
+    },
+    {
+      "courseName": "Learn React Hooks in a Better Way",
+      "imgSrc": "/images/react-hooks-img.png",
+      "href": "https://www.udemy.com/course/learn-react-hooks-in-a-better-way/?referralCode=B2E5AC5DE2762AB8A667"
+    },
+    {
+      "courseName": "Deploy your NodeExpress App to the Cloud",
+      "imgSrc": "/images/deploy-app-img.png",
+      "href": "https://www.udemy.com/course/deploy-your-node-express-app-to-the-cloud/?referralCode=69772F332A34A0921636"
+    }
+  ]
+  
+
+  return {
+    props, // will be passed to the page component as props
+  };
+}
+
+const Courses: FC<IProps> = ({ courses }) => {
+  const onlineCourses = courses.map((course, index) => (
     <div key={index} className={stylesCoursesData.courseOnline}>
       <div className={stylesCoursesData.course_img}>
         {/* <img src={course.imgSrc} alt="coursePic" /> */}
