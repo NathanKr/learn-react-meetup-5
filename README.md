@@ -5,7 +5,7 @@ Prepare for meetup 5
 <h3>Done</h3>
 pages
 <h3>missing</h3>
-navbar , footer , google analytics , savycall , Image and ssg for all relevant pages (started with Courses)
+navbar , footer , google analytics , savycall , Image and ssg for all relevant pages (done for Courses)
 
 
 <h2>Ignoring in first path</h2>
@@ -21,10 +21,6 @@ vite index.html
 <li>SavvyCal gives error not clear why and if i can put a code in _document</li> 
 </ul>
 
-<h2>Flow</h2>
-<ul>
-<li>according to lecture .component order : Home , About (needed tweaks) </li>
-</ul>
 
 <h2>points of interests</h2>
 <ul>
