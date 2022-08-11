@@ -1,5 +1,5 @@
 <h2>Motivation</h2>
-Prepare for meetup 5
+Prepare for <a href='https://www.meetup.com/learn-react-israel/events/287488063/'>meetup 5</a>
 
 <h2>Status</h2>
 <h3>Done</h3>
